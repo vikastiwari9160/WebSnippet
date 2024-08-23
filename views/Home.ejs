@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="logo">WebSnippet</div>
+    <div class="container">
+        <div id="input">
+            <form method="post" id="form" action="/">
+                <label for="url">Enter Your Source Url</label>
+                <input type="text" id="url" name="url" placeholder="https://www.example.com">
+                <button type="submit">Create</button>
+                <a id="logout" href="/logout">Sign Out</a>
+            </form>
+        </div>
+        <% if (locals.ShortUrl) {%>
+            <h3 class="link">ShortUrl Generated : <%=ShortUrl %>
+            </h3>
+            <% } %>
+                <table>
+                    <thead>
+                        <th style="width: 100px;">S no.</th>
+                        <th style="width: 200px;">Id</th>
+                        <th style="width: 400px;">SourceUrl</th>
+                        <th style="width: 100px;">Visited</th>
+                        <th style="width: 100px;">Remove</th>
+                    </thead>
+                    <tbody>
+                        <% locals.Urls.forEach((url,index)=> { %>
+                            <tr>
+                                <td>
+                                    <%=index+1 %>
+                                </td>
+                                <td id="shortId">
+                                    <%=url.shortId %>
+                                </td>
+                                <td>
+                                    <%=url.redirectURL %>
+                                </td>
+                                <td>
+                                    <%=url.visitHistory.length %>
+                                </td>
+                                <td class="remove">
+                                    <a href="/delete/<%=url.shortId%>"><i class=" fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+
+                </table>
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/c93e769881.js" crossorigin="anonymous"></script>
+
+</html>

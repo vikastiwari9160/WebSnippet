@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="/css/styleForLoginSignup.css">
+</head>
+
+<body>
+    <div class="logo">WebSnippet</div>
+    <div class="container container-login-signup">
+        <h1>LogIn</h1>
+        <div id="input-field">
+            <form action="/user/login" method="post">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="abc@email.com">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password">
+                <% if(locals.err){ %>
+                    <span style="color: white;">
+                        <%=err %>
+                    </span>
+                    <% } %>
+                        <button type="submit">Login</button>
+            </form>
+            <a href="/signup">Create New Account</a>
+        </div>
+    </div>
+</body>
+
+</html>

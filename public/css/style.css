@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393E46;
+    font-family: "Roboto", sans-serif;
+    color: #EEEEEE;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: "Pacifico", cursive;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+#logout {
+    position: absolute;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    font-size: 22px;
+    text-align: center;
+}
+
+#input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#input input,
+button,
+a {
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+}
+
+#input a {
+    text-decoration: none;
+    color: #000;
+    background-color: #00ADB5;
+    font-size: 22px;
+    border-radius: 50px;
+    cursor: default;
+}
+
+#input button {
+    background-color: #00ADB5;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    cursor: default;
+    border-radius: 50px;
+}
+
+#input button:hover {
+    background-color: #008389;
+}
+
+.link {
+    margin: 10px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+th {
+    /* width: 300px; */
+    background-color: #00ADB5;
+}
+
+td {
+    background-color: #000;
+}
+
+.remove {
+    font-size: 16px;
+}
+
+.remove a {
+    color: #EEEEEE;
+}
+
+.remove a:hover {
+    color: #ff6060;
+}

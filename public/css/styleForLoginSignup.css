@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393E46;
+    font-family: "Roboto", sans-serif;
+    color: #EEEEEE;
+    user-select: none;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: "Pacifico", cursive;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.container-login-signup {
+    background-color: #00ADB5;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 50px;
+    color: #000;
+}
+
+.container-login-signup h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container-login-signup #input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+}
+
+.container-login-signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-login-signup label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.container-login-signup input {
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.container-login-signup button,
+a {
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #EEEEEE;
+    color: #000;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: default;
+}
+
+.container-login-signup button:hover,
+a:hover {
+    background-color: #bbbaba;
+}
+
+.container-login-signup h1 {
+    text-align: center;
+    margin: 10px;
+}
